@@ -13,6 +13,22 @@ body {
     justify-content: center;
 }
 
+/*svg classes*/
+#Arr_right{
+    width: 4%;
+    margin-left: 2%;
+}
+#Arr_left{
+    width: 4%;
+    margin-right: 2%;
+}
+.cls-1 {
+    fill: none;
+    stroke: #dc3545;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    width: 5%;
+}
 input {
     margin: 10px;
 }
@@ -226,10 +242,10 @@ input {
 
 .neumorphic-text {
     color: #000000;
-
+    letter-spacing: 5px;
     font-size: xx-large;
     font-family: Quicksand, sans-serif;
-    font-weight: bold;
+    font-weight: lighter;
     margin: 1em 0;
 }
 

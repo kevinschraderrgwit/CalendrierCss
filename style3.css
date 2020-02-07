@@ -13,6 +13,18 @@ body {
     justify-content: center;
 }
 
+#Arr_left{
+    width: 4%;
+    margin-right: 2%;
+}
+.cls-1 {
+    fill: none;
+    stroke: #dc3545;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    width: 5%;
+}
+
 input {
     margin: 10px;
 }
@@ -226,10 +238,10 @@ input {
 
 .neumorphic-text {
     color: #000000;
-
+    letter-spacing: 5px;
     font-size: xx-large;
     font-family: Quicksand, sans-serif;
-    font-weight: bold;
+    font-weight: lighter;
     margin: 1em 0;
 }
 
@@ -560,6 +572,7 @@ input {
 }
 
 .datecontainer {
+    float: left;
     width: 14.2857142%;
     display: inline-block;
     text-align: center;
