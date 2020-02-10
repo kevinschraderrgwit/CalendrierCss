@@ -12,16 +12,42 @@ body {
     text-align: center;
     justify-content: center;
 }
+#locality-dropdown{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: auto;
+    width: 93%;
+    padding: 1%;
+    color: #535D74;
+    border: none;
+    /*font-size: 18px;*/
+    background-color: #EBECF0;
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15), -7px -7px 20px rgba(255, 255, 255, 1), inset 0px 0px 4px rgba(255, 255, 255, 0), inset 7px 7px 15px rgba(55, 84, 170, .15), inset -7px -7px 20px rgba(255, 255, 255, 1), 0px 0px 4px rgba(255, 255, 255, .2) !important;
+}
+
+
+#locality-input {
+    margin: auto;
+    padding: 1%;
+    color: #535D74;
+    font-size: 18px;
+    background-color: #EBECF0;
+    border-radius: 20%;
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15), -7px -7px 20px rgba(255, 255, 255, 1), inset 0px 0px 4px rgba(255, 255, 255, 0), inset 7px 7px 15px rgba(55, 84, 170, .15), inset -7px -7px 20px rgba(255, 255, 255, 1), 0px 0px 4px rgba(255, 255, 255, .2) !important;
+}
 
 /*svg classes*/
-#Arr_right{
+#Arr_right {
     width: 4%;
     margin-left: 2%;
 }
-#Arr_left{
+
+#Arr_left {
     width: 4%;
     margin-right: 2%;
 }
+
 .cls-1 {
     fill: none;
     stroke: #dc3545;
@@ -29,31 +55,37 @@ body {
     stroke-miterlimit: 10;
     width: 5%;
 }
+
 input {
     margin: 10px;
 }
-.btn{
+
+.btn {
     width: 60%;
 }
-.slider{
+
+.slider {
     width: 80%;
 }
-.center{
+
+.center {
     margin-left: 10%;
     margin-right: 10%;
 }
 
-.centerNotes{
+.centerNotes {
     margin-left: auto;
     margin-right: auto;
 }
-.fullwidth{
+
+.fullwidth {
     width: 100%;
 }
 
-.halfwidth{
+.halfwidth {
     width: 100%;
 }
+
 .btn:focus {
     outline: none !important;
 }
@@ -172,6 +204,7 @@ input {
     margin-left: -10px;
     cursor: pointer;
 }
+
 .neumorphic-slider__thumb:nth-child(4) {
     box-shadow: 7px 7px 15px rgba(55, 84, 170, .15), 0px 0px 15px rgba(55, 84, 170, .3);
     width: 20px;
@@ -197,7 +230,6 @@ input {
     margin-left: -10px;
     cursor: pointer;
 }
-
 
 
 .neumorphic-slider__popover {
