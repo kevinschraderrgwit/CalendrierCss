@@ -3,6 +3,7 @@ $(document).ready(function () {
     let dropdown = $('#locality-dropdown');
     let input = $('#locality-input');
 
+
     dropdown.empty();
 
     dropdown.append('<option selected="true" disabled>Choose country</option>');
@@ -10,7 +11,7 @@ $(document).ready(function () {
 
     const url = 'json/countries.json';
 
-    // Populate dropdown with list of provinces
+    // Populate dropdown with list of countries
     $.getJSON(url, function (data) {
         $.each(data, function (key, entry) {
             dropdown.append($('<option></option>').attr('value', entry.dial_code).text(entry.name + "(" + entry.dial_code + ")"));
@@ -25,7 +26,18 @@ $(document).ready(function () {
         console.log(str);
         input.text(str);
     });
-
+//show div for extra guest
+    $('#guest').hide();
+    $("#plus_btn").click(function(){
+        $("#guest").show();
+    });
+    $("#close").click(function(){
+        $("#guest").hide();
+    });
+    $("#save").click(function(){
+        $("#guest").hide();
+        alert("You successfully saved a new guest.")
+    });
 
     //neumorphic elements
     $('.neumorphic-checkbox').on('click', function () {

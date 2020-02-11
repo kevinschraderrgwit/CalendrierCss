@@ -12,7 +12,35 @@ body {
     text-align: center;
     justify-content: center;
 }
-#locality-dropdown{
+
+#guest{
+    background-color: #EBECF0;
+    border-radius: 10%;
+
+    position: absolute;
+    margin: auto;
+    z-index: 2000;
+    width: 50%;
+    height: 500px;
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+    -2px -4px 20px rgba(255, 255, 255, 1),
+    inset 0px 0px 4px rgba(255, 255, 255, .2),
+    inset 7px 7px 15px rgba(55, 84, 170, 0),
+    inset -1px -2px 20px rgba(255, 255, 255, 0),
+    0px 0px 4px rgba(255, 255, 255, 0) !important;
+}
+
+select:focus {
+    outline: none;
+}
+
+#plus{
+    width: 6%;
+    stroke-width: 7px;
+}
+
+#locality-dropdown {
+    border-radius: 15px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -28,13 +56,19 @@ body {
 
 
 #locality-input {
-    margin: auto;
+    text-align: right;
+    width: 100px;
+    margin-left: 2%;
+    margin-top: 2%;
+    z-index: 1000;
+    position: absolute;
+    background-color: #dc3545;
     padding: 1%;
-    color: #535D74;
+    color: white;
     font-size: 18px;
-    background-color: #EBECF0;
-    border-radius: 20%;
-    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15), -7px -7px 20px rgba(255, 255, 255, 1), inset 0px 0px 4px rgba(255, 255, 255, 0), inset 7px 7px 15px rgba(55, 84, 170, .15), inset -7px -7px 20px rgba(255, 255, 255, 1), 0px 0px 4px rgba(255, 255, 255, .2) !important;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    /*box-shadow: 7px 7px 15px rgba(55, 84, 170, .15), -7px -7px 20px rgba(255, 255, 255, 1), inset 0px 0px 4px rgba(255, 255, 255, 0), inset 7px 7px 15px rgba(55, 84, 170, .15), inset -7px -7px 20px rgba(255, 255, 255, 1), 0px 0px 4px rgba(255, 255, 255, .2) !important;*/
 }
 
 /*svg classes*/
@@ -62,6 +96,13 @@ input {
 
 .btn {
     width: 60%;
+}
+
+.btn:hover{
+    opacity: 0.7;
+    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+    6px 6px 10px rgba(0, 0, 0, 0.2);
+
 }
 
 .slider {
@@ -357,6 +398,10 @@ input {
     margin: 25px 10px 5px;
 }
 
+.country {
+    padding-left: 100px !important;
+}
+
 .neumorphic-input {
     background-color: var(--back-color);
     border-radius: 20px;
@@ -370,6 +415,7 @@ input {
     outline: none !important;
     color: #535D74;
     width: 100%;
+    position: relative;
 }
 
 .neumorphic-input ::-webkit-input-placeholder { /* Edge */
