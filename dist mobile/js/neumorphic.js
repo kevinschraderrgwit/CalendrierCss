@@ -50,18 +50,15 @@ $(document).ready(function () {
     $("#plus_btn").click(function () {
         $("#guest").show();
         $("#personal_info").hide();
-        $("#plus_btn").hide();
     });
     $("#close").click(function () {
         $("#guest").hide();
         $("#personal_info").show();
-        $("#plus_btn").show();
     });
     $("#save").click(function () {
         $("#guest").hide();
         $('#guest_list').show();
         $("#personal_info").show();
-        $("#plus_btn").show();
 
         let str_guest_email = "";
         let str_guest_name = "";
@@ -76,8 +73,6 @@ $(document).ready(function () {
         $("#guest_email_list").text("");
         $('#guest_list').hide();
     });
-
-    //get data from guest and inserting in guest list
 
     //neumorphic elements
     $('.neumorphic-checkbox').on('click', function () {
